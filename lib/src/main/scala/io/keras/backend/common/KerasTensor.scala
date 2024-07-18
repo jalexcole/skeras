@@ -23,5 +23,5 @@ class KerasTensor(
     val recordHistory: Boolean = true,
     val name: String = null
 ) {
-   
+  
 }
