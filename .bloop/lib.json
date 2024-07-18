@@ -1,0 +1,1360 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "lib",
+        "directory": "/workspace/skeras/lib",
+        "workspaceDir": "/workspace/skeras",
+        "sources": [
+            "/workspace/skeras/lib/src/main/scala",
+            "/workspace/skeras/lib/src/main/java"
+        ],
+        "dependencies": [
+            
+        ],
+        "classpath": [
+            "/workspace/.gradle/caches/modules-2/files-2.1/be.botkop/numsca_2.13/0.1.7/dca40b24fc1a2562bef59dc9ac27b4b17feb6d93/numsca_2.13-0.1.7.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native-platform/0.9.1/952a27987f4fea4ba3a2547551fcc5e31c595c37/nd4j-native-platform-0.9.1.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/d0d4e11141bccf1de588a6edb887c811a4b5ab79/nd4j-native-0.9.1.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/98cf23e416181df854dde539316dae2505a8911a/nd4j-native-0.9.1-android-arm.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/73604d40f4d414716375d579e7568f392d656c4f/nd4j-native-0.9.1-android-x86.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/dad24bde8da226270eb95dd922c8159ba336ae84/nd4j-native-0.9.1-linux-x86_64.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/c25d480129677653987292797de2aabc77ea0d7e/nd4j-native-0.9.1-macosx-x86_64.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/8b64d48fd90253fbec571488e964c9150fa08ff2/nd4j-native-0.9.1-windows-x86_64.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/5878a9a35728170ca6466ffbbe0636a429f26245/nd4j-native-0.9.1-linux-ppc64le.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native-api/0.9.1/7fcba24a804d955bcc6958609b41fb562b7a491c/nd4j-native-api-0.9.1.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-api/0.9.1/781bbeed71ef40b902c4b8076c7a2fc937f85160/nd4j-api-0.9.1.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-buffer/0.9.1/55e8026a87719eca757b1eb05e458c66ed6e35dc/nd4j-buffer-0.9.1.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-context/0.9.1/bd07864a9c490a01cc88e23b6b3b40fef43014a0/nd4j-context-0.9.1.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-common/0.9.1/b04b22aed42a51b2f381ba3f6dec4799564312b0/nd4j-common-0.9.1.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-math3/3.6.1/e4ba98f1d4b3c80ec46392f25e094a6a2e58fcbf/commons-math3-3.6.1.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/com.typesafe.scala-logging/scala-logging_2.13/3.9.2/6986314976f55419819ca7ae9f9d077ba070fe42/scala-logging_2.13-3.9.2.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.13.0/2dbe07b0369dbf00a098b7925b2afca016f124b0/scala-reflect-2.13.0.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.13/3b1434403ddb147b8030f98f246153e4ce622c78/scala-library-2.13.13.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.reflections/reflections/0.9.10/c7f4ea230aedc757ca1499ebcfb2953c81cf8b67/reflections-0.9.10.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/33.1.0-jre/9b7ed39143d59e8eabcc6f91ffe4d23db2efe558/guava-33.1.0-jre.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.2/c4a06a64e650562f30b7bf9aaec1bfed43aca12b/failureaccess-1.0.2.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.42.0/638ec33f363a94d41a4f03c3e7d3dcfba64e402d/checker-qual-3.42.0.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.26.1/c1fde57694bdc14e8618899aaa6e857d9465d7de/error_prone_annotations-2.26.1.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/3.0.0/7399e65dd7e9ff3404f4535b2f017093bdb134c7/j2objc-annotations-3.0.0.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/7c4f3c474fb2c041d8028740440937705ebb473a/logback-classic-1.2.3.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas-platform/0.2.19-1.3/eab27eea89eabf1347c4263d91a7c1f9d05dc4f6/openblas-platform-0.2.19-1.3.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.26/77100a62c2e6f04b53977b9f541044d7d722693d/slf4j-api-1.7.26.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.3/864344400c3d4d92dfeb0a305dc87d953677c03c/logback-core-1.2.3.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/d82330716ef90c175cfe238a4b8b0509a6fa705c/openblas-0.2.19-1.3.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/ef70f48568644a11e29c69981147cba2b3681c55/openblas-0.2.19-1.3-android-arm.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/2189141b6c83cc8e5b342b04e8f49e22996f72f4/openblas-0.2.19-1.3-android-x86.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/f4690d42b6fb6c2e51ef7c4412128bccaf58a30b/openblas-0.2.19-1.3-linux-x86.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/9d1b1cceb7e113eb31b198bffcb336647191dda4/openblas-0.2.19-1.3-linux-x86_64.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/dad2dde60800dfb1108f957f514a5f8de942f5d3/openblas-0.2.19-1.3-linux-armhf.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/2e6e277acdbad4d037ed26ee40ac2f5db57196c9/openblas-0.2.19-1.3-linux-ppc64le.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/8a405939a23f53f980d9a32678efff424c593d51/openblas-0.2.19-1.3-macosx-x86_64.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/f10fed548970f6bc1f8f0692da30f6328da21b59/openblas-0.2.19-1.3-windows-x86.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/5700913706162e7e306289bd06cd0508d49d6c85/openblas-0.2.19-1.3-windows-x86_64.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco/javacpp/1.3.3/bdea626b334e6a31cfa7b2a9ab3881e6da7015ce/javacpp-1.3.3.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/jackson/0.9.1/e457a1d6897967fb4a7551824549fed587a57f62/jackson-0.9.1.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.16.16/245b50f714bf89ed7659266ace12f9e509d13551/lombok-1.16.16.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/net.ericaro/neoitertools/1.0.0/25fa0a0aaf12bc386ecdb19a6ee747b361c73a20/neoitertools-1.0.0.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.12/ebe66a6b88caab31d7a19571ad23656377523545/snakeyaml-1.12.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.codehaus.woodstox/stax2-api/3.1.4/ac19014b1e6a7c08aad07fe114af792676b685b7/stax2-api-3.1.4.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.2/a5f29a7acaddea3f4af307e8cf2d0cc82645fd7d/joda-time-2.2.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/junit/junit/4.8.2/c94f54227b08100974c36170dcb53329435fe5ad/junit-4.8.2.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.18.2-GA/1180a90fbad732b60fb728a6bbe8fcb3151423d7/javassist-3.18.2-GA.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/annotations/2.0.1/9ef6656259841cebfb9fb0697bb122ada4485498/annotations-2.0.1.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/com.github.stephenc.findbugs/findbugs-annotations/1.3.9-1/a6b11447635d80757d64b355bed3c00786d86801/findbugs-annotations-1.3.9-1.jar",
+            "/workspace/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.1/6738a2da2202ce360f0af90aba005c1e05a2c4cd/commons-lang3-3.3.1.jar"
+        ],
+        "out": "/workspace/skeras/.bloop/lib/build",
+        "classesDir": "/workspace/skeras/.bloop/lib/build/classes",
+        "resources": [
+            "/workspace/skeras/lib/src/main/resources"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.13.13",
+            "options": [
+                "-deprecation",
+                "-unchecked"
+            ],
+            "jars": [
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-compiler/2.13.13/2854b61391ab431b542224a863d5e39a535a7266/scala-compiler-2.13.13.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.scala-sbt/compiler-bridge_2.13/1.9.3/f209697417427c3a239f809d1a0fb2e8614a1875/compiler-bridge_2.13-1.9.3-sources.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.scala-sbt/compiler-interface/1.9.3/b882061aec6f9de3093e777c28022eec82a1e802/compiler-interface-1.9.3.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.13.13/46866f0e2cf6168322dc11f0f721c2db78d52ac7/scala-reflect-2.13.13.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.13/3b1434403ddb147b8030f98f246153e4ce622c78/scala-library-2.13.13.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/io.github.java-diff-utils/java-diff-utils/4.12/1a712a91324d566eef39817fc5c9980eb10c21db/java-diff-utils-4.12.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.jline/jline/3.24.1/babbac968fafe76884b0cf41124569e8bc004d04/jline-3.24.1.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.13.0/1200e7ebeedbe0d10062093f32925a912020e747/jna-5.13.0.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.scala-sbt/util-interface/1.9.2/b696783ce958ebdf061c53fa173a67f9f1b88754/util-interface-1.9.2.jar"
+            ],
+            "setup": {
+                "order": "java->scala",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                "-target",
+                "1.8",
+                "-source",
+                "1.8",
+                "-h",
+                "/workspace/skeras/lib/build/generated/sources/headers/java/main",
+                "-g",
+                "-sourcepath",
+                "",
+                "-proc:none",
+                "-XDuseUnsharedTable=true"
+            ]
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/home/gitpod/.sdkman/candidates/java/11.0.23.fx-zulu",
+                "options": [
+                    
+                ]
+            },
+            "mainClass": [
+                
+            ],
+            "classpath": [
+                "/workspace/.gradle/caches/modules-2/files-2.1/be.botkop/numsca_2.13/0.1.7/dca40b24fc1a2562bef59dc9ac27b4b17feb6d93/numsca_2.13-0.1.7.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native-platform/0.9.1/952a27987f4fea4ba3a2547551fcc5e31c595c37/nd4j-native-platform-0.9.1.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/d0d4e11141bccf1de588a6edb887c811a4b5ab79/nd4j-native-0.9.1.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/98cf23e416181df854dde539316dae2505a8911a/nd4j-native-0.9.1-android-arm.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/73604d40f4d414716375d579e7568f392d656c4f/nd4j-native-0.9.1-android-x86.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/dad24bde8da226270eb95dd922c8159ba336ae84/nd4j-native-0.9.1-linux-x86_64.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/c25d480129677653987292797de2aabc77ea0d7e/nd4j-native-0.9.1-macosx-x86_64.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/8b64d48fd90253fbec571488e964c9150fa08ff2/nd4j-native-0.9.1-windows-x86_64.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/5878a9a35728170ca6466ffbbe0636a429f26245/nd4j-native-0.9.1-linux-ppc64le.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native-api/0.9.1/7fcba24a804d955bcc6958609b41fb562b7a491c/nd4j-native-api-0.9.1.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-api/0.9.1/781bbeed71ef40b902c4b8076c7a2fc937f85160/nd4j-api-0.9.1.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-buffer/0.9.1/55e8026a87719eca757b1eb05e458c66ed6e35dc/nd4j-buffer-0.9.1.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-context/0.9.1/bd07864a9c490a01cc88e23b6b3b40fef43014a0/nd4j-context-0.9.1.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-common/0.9.1/b04b22aed42a51b2f381ba3f6dec4799564312b0/nd4j-common-0.9.1.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-math3/3.6.1/e4ba98f1d4b3c80ec46392f25e094a6a2e58fcbf/commons-math3-3.6.1.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/com.typesafe.scala-logging/scala-logging_2.13/3.9.2/6986314976f55419819ca7ae9f9d077ba070fe42/scala-logging_2.13-3.9.2.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.13.0/2dbe07b0369dbf00a098b7925b2afca016f124b0/scala-reflect-2.13.0.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.13/3b1434403ddb147b8030f98f246153e4ce622c78/scala-library-2.13.13.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.reflections/reflections/0.9.10/c7f4ea230aedc757ca1499ebcfb2953c81cf8b67/reflections-0.9.10.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/33.1.0-jre/9b7ed39143d59e8eabcc6f91ffe4d23db2efe558/guava-33.1.0-jre.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.2/c4a06a64e650562f30b7bf9aaec1bfed43aca12b/failureaccess-1.0.2.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.42.0/638ec33f363a94d41a4f03c3e7d3dcfba64e402d/checker-qual-3.42.0.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.26.1/c1fde57694bdc14e8618899aaa6e857d9465d7de/error_prone_annotations-2.26.1.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/7c4f3c474fb2c041d8028740440937705ebb473a/logback-classic-1.2.3.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas-platform/0.2.19-1.3/eab27eea89eabf1347c4263d91a7c1f9d05dc4f6/openblas-platform-0.2.19-1.3.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.26/77100a62c2e6f04b53977b9f541044d7d722693d/slf4j-api-1.7.26.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.3/864344400c3d4d92dfeb0a305dc87d953677c03c/logback-core-1.2.3.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/d82330716ef90c175cfe238a4b8b0509a6fa705c/openblas-0.2.19-1.3.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/ef70f48568644a11e29c69981147cba2b3681c55/openblas-0.2.19-1.3-android-arm.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/2189141b6c83cc8e5b342b04e8f49e22996f72f4/openblas-0.2.19-1.3-android-x86.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/f4690d42b6fb6c2e51ef7c4412128bccaf58a30b/openblas-0.2.19-1.3-linux-x86.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/9d1b1cceb7e113eb31b198bffcb336647191dda4/openblas-0.2.19-1.3-linux-x86_64.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/dad2dde60800dfb1108f957f514a5f8de942f5d3/openblas-0.2.19-1.3-linux-armhf.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/2e6e277acdbad4d037ed26ee40ac2f5db57196c9/openblas-0.2.19-1.3-linux-ppc64le.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/8a405939a23f53f980d9a32678efff424c593d51/openblas-0.2.19-1.3-macosx-x86_64.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/f10fed548970f6bc1f8f0692da30f6328da21b59/openblas-0.2.19-1.3-windows-x86.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/5700913706162e7e306289bd06cd0508d49d6c85/openblas-0.2.19-1.3-windows-x86_64.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco/javacpp/1.3.3/bdea626b334e6a31cfa7b2a9ab3881e6da7015ce/javacpp-1.3.3.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/jackson/0.9.1/e457a1d6897967fb4a7551824549fed587a57f62/jackson-0.9.1.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.16.16/245b50f714bf89ed7659266ace12f9e509d13551/lombok-1.16.16.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/net.ericaro/neoitertools/1.0.0/25fa0a0aaf12bc386ecdb19a6ee747b361c73a20/neoitertools-1.0.0.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.12/ebe66a6b88caab31d7a19571ad23656377523545/snakeyaml-1.12.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.codehaus.woodstox/stax2-api/3.1.4/ac19014b1e6a7c08aad07fe114af792676b685b7/stax2-api-3.1.4.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.2/a5f29a7acaddea3f4af307e8cf2d0cc82645fd7d/joda-time-2.2.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/junit/junit/4.8.2/c94f54227b08100974c36170dcb53329435fe5ad/junit-4.8.2.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.18.2-GA/1180a90fbad732b60fb728a6bbe8fcb3151423d7/javassist-3.18.2-GA.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/annotations/2.0.1/9ef6656259841cebfb9fb0697bb122ada4485498/annotations-2.0.1.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/com.github.stephenc.findbugs/findbugs-annotations/1.3.9-1/a6b11447635d80757d64b355bed3c00786d86801/findbugs-annotations-1.3.9-1.jar",
+                "/workspace/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.1/6738a2da2202ce360f0af90aba005c1e05a2c4cd/commons-lang3-3.3.1.jar"
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-mustmatchers_2.13",
+                    "version": "3.2.18",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-mustmatchers_2.13",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-mustmatchers_2.13/3.2.18/aa1f583a21b1f849ec4475e3ee17b0fedb8532e/scalatest-mustmatchers_2.13-3.2.18.jar"
+                        },
+                        {
+                            "name": "scalatest-mustmatchers_2.13",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-mustmatchers_2.13/3.2.18/c0b500397e812f2c0f9dd9e54a27921438bb86b9/scalatest-mustmatchers_2.13-3.2.18-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.nd4j",
+                    "name": "nd4j-native",
+                    "version": "0.9.1",
+                    "artifacts": [
+                        {
+                            "name": "nd4j-native",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/8b64d48fd90253fbec571488e964c9150fa08ff2/nd4j-native-0.9.1-windows-x86_64.jar"
+                        },
+                        {
+                            "name": "nd4j-native",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/b2ee18006d23b41f0830eb35dc77fd86b91bab32/nd4j-native-0.9.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.bytedeco.javacpp-presets",
+                    "name": "openblas",
+                    "version": "0.2.19-1.3",
+                    "artifacts": [
+                        {
+                            "name": "openblas",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/5c336d63e768ff4f21449479aec5e048849e16ae/openblas-0.2.19-1.3-sources.jar"
+                        },
+                        {
+                            "name": "openblas",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/8a405939a23f53f980d9a32678efff424c593d51/openblas-0.2.19-1.3-macosx-x86_64.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.guava",
+                    "name": "guava",
+                    "version": "33.1.0-jre",
+                    "artifacts": [
+                        {
+                            "name": "guava",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/33.1.0-jre/d387b5accef736533f994567b6d7d000d330bab6/guava-33.1.0-jre-sources.jar"
+                        },
+                        {
+                            "name": "guava",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/33.1.0-jre/9b7ed39143d59e8eabcc6f91ffe4d23db2efe558/guava-33.1.0-jre.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.bytedeco",
+                    "name": "javacpp",
+                    "version": "1.3.3",
+                    "artifacts": [
+                        {
+                            "name": "javacpp",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco/javacpp/1.3.3/4d862e65b68f322bd27212c0f530a0a8e87bc957/javacpp-1.3.3-sources.jar"
+                        },
+                        {
+                            "name": "javacpp",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco/javacpp/1.3.3/bdea626b334e6a31cfa7b2a9ab3881e6da7015ce/javacpp-1.3.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-io",
+                    "name": "commons-io",
+                    "version": "2.4",
+                    "artifacts": [
+                        {
+                            "name": "commons-io",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar"
+                        },
+                        {
+                            "name": "commons-io",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/f2d8698c46d1167ff24b06a840a87d91a02db891/commons-io-2.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalactic",
+                    "name": "scalactic_2.13",
+                    "version": "3.2.18",
+                    "artifacts": [
+                        {
+                            "name": "scalactic_2.13",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalactic/scalactic_2.13/3.2.18/1478e06a3dc9ca4e91c584b01e013cd9e64603e4/scalactic_2.13-3.2.18-sources.jar"
+                        },
+                        {
+                            "name": "scalactic_2.13",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalactic/scalactic_2.13/3.2.18/f04525f874bc821fd29dd20a857cc6502b5094c1/scalactic_2.13-3.2.18.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "junit",
+                    "name": "junit",
+                    "version": "4.13.2",
+                    "artifacts": [
+                        {
+                            "name": "junit",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar"
+                        },
+                        {
+                            "name": "junit",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/33987872a811fe4d4001ed494b07854822257f42/junit-4.13.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.13",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.13/3e8792cc156ae054eb4f09ddabfeac84263f5e35/scala-library-2.13.13-sources.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.13/3b1434403ddb147b8030f98f246153e4ce622c78/scala-library-2.13.13.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.checkerframework",
+                    "name": "checker-qual",
+                    "version": "3.42.0",
+                    "artifacts": [
+                        {
+                            "name": "checker-qual",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.42.0/638ec33f363a94d41a4f03c3e7d3dcfba64e402d/checker-qual-3.42.0.jar"
+                        },
+                        {
+                            "name": "checker-qual",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.42.0/49cc9a760cebbbcd13be06679a224a1ecc85f884/checker-qual-3.42.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.bytedeco.javacpp-presets",
+                    "name": "openblas",
+                    "version": "0.2.19-1.3",
+                    "artifacts": [
+                        {
+                            "name": "openblas",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/f10fed548970f6bc1f8f0692da30f6328da21b59/openblas-0.2.19-1.3-windows-x86.jar"
+                        },
+                        {
+                            "name": "openblas",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/5c336d63e768ff4f21449479aec5e048849e16ae/openblas-0.2.19-1.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-xml_2.13",
+                    "version": "2.1.0",
+                    "artifacts": [
+                        {
+                            "name": "scala-xml_2.13",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-xml_2.13/2.1.0/fd264db1c7415552a8d2cb28ec65bcc922fc298/scala-xml_2.13-2.1.0-sources.jar"
+                        },
+                        {
+                            "name": "scala-xml_2.13",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-xml_2.13/2.1.0/f2c107c097692b6c07941e7b96fcf6ec3b58add6/scala-xml_2.13-2.1.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatestplus",
+                    "name": "junit-4-13_2.13",
+                    "version": "3.2.2.0",
+                    "artifacts": [
+                        {
+                            "name": "junit-4-13_2.13",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatestplus/junit-4-13_2.13/3.2.2.0/75fd94bb9272ec7023409cb80547ff5ea9bb813d/junit-4-13_2.13-3.2.2.0.jar"
+                        },
+                        {
+                            "name": "junit-4-13_2.13",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatestplus/junit-4-13_2.13/3.2.2.0/d667a1de3e392682978823404573b7a28cdaf215/junit-4-13_2.13-3.2.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.codehaus.woodstox",
+                    "name": "stax2-api",
+                    "version": "3.1.4",
+                    "artifacts": [
+                        {
+                            "name": "stax2-api",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.codehaus.woodstox/stax2-api/3.1.4/ac19014b1e6a7c08aad07fe114af792676b685b7/stax2-api-3.1.4.jar"
+                        },
+                        {
+                            "name": "stax2-api",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.codehaus.woodstox/stax2-api/3.1.4/b40604d61c01cc081a4a7bdfc562aa9847ee8857/stax2-api-3.1.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "junit",
+                    "name": "junit",
+                    "version": "4.8.2",
+                    "artifacts": [
+                        {
+                            "name": "junit",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/junit/junit/4.8.2/c94f54227b08100974c36170dcb53329435fe5ad/junit-4.8.2.jar"
+                        },
+                        {
+                            "name": "junit",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/junit/junit/4.8.2/cccca612a66b8387c399be31d69daf000de2ac9e/junit-4.8.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.bytedeco.javacpp-presets",
+                    "name": "openblas",
+                    "version": "0.2.19-1.3",
+                    "artifacts": [
+                        {
+                            "name": "openblas",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/2189141b6c83cc8e5b342b04e8f49e22996f72f4/openblas-0.2.19-1.3-android-x86.jar"
+                        },
+                        {
+                            "name": "openblas",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/5c336d63e768ff4f21449479aec5e048849e16ae/openblas-0.2.19-1.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.projectlombok",
+                    "name": "lombok",
+                    "version": "1.16.16",
+                    "artifacts": [
+                        {
+                            "name": "lombok",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.16.16/245b50f714bf89ed7659266ace12f9e509d13551/lombok-1.16.16.jar"
+                        },
+                        {
+                            "name": "lombok",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.16.16/c4b112e9645070ac05946084317cc5d01cf4ddcd/lombok-1.16.16-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.code.findbugs",
+                    "name": "jsr305",
+                    "version": "3.0.2",
+                    "artifacts": [
+                        {
+                            "name": "jsr305",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar"
+                        },
+                        {
+                            "name": "jsr305",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/b19b5927c2c25b6c70f093767041e641ae0b1b35/jsr305-3.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.javassist",
+                    "name": "javassist",
+                    "version": "3.18.2-GA",
+                    "artifacts": [
+                        {
+                            "name": "javassist",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.18.2-GA/7163084913aa7399e4ce2cbc3ee5c00ac2b1f35f/javassist-3.18.2-GA-sources.jar"
+                        },
+                        {
+                            "name": "javassist",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.18.2-GA/1180a90fbad732b60fb728a6bbe8fcb3151423d7/javassist-3.18.2-GA.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.bytedeco.javacpp-presets",
+                    "name": "openblas-platform",
+                    "version": "0.2.19-1.3",
+                    "artifacts": [
+                        {
+                            "name": "openblas-platform",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas-platform/0.2.19-1.3/eab27eea89eabf1347c4263d91a7c1f9d05dc4f6/openblas-platform-0.2.19-1.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest_2.13",
+                    "version": "3.2.18",
+                    "artifacts": [
+                        {
+                            "name": "scalatest_2.13",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest_2.13/3.2.18/1662d3adcba82deabe7ec04632247cb138694353/scalatest_2.13-3.2.18-sources.jar"
+                        },
+                        {
+                            "name": "scalatest_2.13",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest_2.13/3.2.18/1e02bd5146f9e366d28218ceafd20a0ec40c8ed0/scalatest_2.13-3.2.18.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "joda-time",
+                    "name": "joda-time",
+                    "version": "2.2",
+                    "artifacts": [
+                        {
+                            "name": "joda-time",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.2/ad622e3cfe39319ea53b183aa5615f96ff346584/joda-time-2.2-sources.jar"
+                        },
+                        {
+                            "name": "joda-time",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.2/a5f29a7acaddea3f4af307e8cf2d0cc82645fd7d/joda-time-2.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-wordspec_2.13",
+                    "version": "3.2.18",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-wordspec_2.13",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-wordspec_2.13/3.2.18/e031cb97b33af5f81e229a56f14afd05afae589b/scalatest-wordspec_2.13-3.2.18-sources.jar"
+                        },
+                        {
+                            "name": "scalatest-wordspec_2.13",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-wordspec_2.13/3.2.18/bba0281e94d58a51e79836c3a6394db4b053cb7f/scalatest-wordspec_2.13-3.2.18.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.nd4j",
+                    "name": "nd4j-buffer",
+                    "version": "0.9.1",
+                    "artifacts": [
+                        {
+                            "name": "nd4j-buffer",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-buffer/0.9.1/55e8026a87719eca757b1eb05e458c66ed6e35dc/nd4j-buffer-0.9.1.jar"
+                        },
+                        {
+                            "name": "nd4j-buffer",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-buffer/0.9.1/1a2185f581a0868f948ab8dc0feaef3c822b5bad/nd4j-buffer-0.9.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.13.0",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.13.0/6edff1b2b467e03c69e164a1f3fcec86dd29bc3f/scala-reflect-2.13.0-sources.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.13.0/2dbe07b0369dbf00a098b7925b2afca016f124b0/scala-reflect-2.13.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.nd4j",
+                    "name": "nd4j-context",
+                    "version": "0.9.1",
+                    "artifacts": [
+                        {
+                            "name": "nd4j-context",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-context/0.9.1/e77108a4f0c7d18cf5566b8487c4429cdc835bc7/nd4j-context-0.9.1-sources.jar"
+                        },
+                        {
+                            "name": "nd4j-context",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-context/0.9.1/bd07864a9c490a01cc88e23b6b3b40fef43014a0/nd4j-context-0.9.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-core_2.13",
+                    "version": "3.2.18",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-core_2.13",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-core_2.13/3.2.18/f77083b1509b1f6aa091c2f6908b40ddd5968e21/scalatest-core_2.13-3.2.18-sources.jar"
+                        },
+                        {
+                            "name": "scalatest-core_2.13",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-core_2.13/3.2.18/8c44e3cc9f3db42854ce774b0d7a5e3aa9a1fd0e/scalatest-core_2.13-3.2.18.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.reflections",
+                    "name": "reflections",
+                    "version": "0.9.10",
+                    "artifacts": [
+                        {
+                            "name": "reflections",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.reflections/reflections/0.9.10/c7f4ea230aedc757ca1499ebcfb2953c81cf8b67/reflections-0.9.10.jar"
+                        },
+                        {
+                            "name": "reflections",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.reflections/reflections/0.9.10/606b8587dab0bf1776b896003f2a2fa0470bb105/reflections-0.9.10-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-lang3",
+                    "version": "3.3.1",
+                    "artifacts": [
+                        {
+                            "name": "commons-lang3",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.1/f46ea7413fbfd021b83e12f03b95f72226de75c8/commons-lang3-3.3.1-sources.jar"
+                        },
+                        {
+                            "name": "commons-lang3",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.1/6738a2da2202ce360f0af90aba005c1e05a2c4cd/commons-lang3-3.3.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.hamcrest",
+                    "name": "hamcrest-core",
+                    "version": "1.3",
+                    "artifacts": [
+                        {
+                            "name": "hamcrest-core",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar"
+                        },
+                        {
+                            "name": "hamcrest-core",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-flatspec_2.13",
+                    "version": "3.2.18",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-flatspec_2.13",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-flatspec_2.13/3.2.18/499a933c1c628a497974300bbe60db08409a0347/scalatest-flatspec_2.13-3.2.18.jar"
+                        },
+                        {
+                            "name": "scalatest-flatspec_2.13",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-flatspec_2.13/3.2.18/7c11f93ff8bc1e10443818c13996e6cbf9559025/scalatest-flatspec_2.13-3.2.18-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.guava",
+                    "name": "listenablefuture",
+                    "version": "9999.0-empty-to-avoid-conflict-with-guava",
+                    "artifacts": [
+                        {
+                            "name": "listenablefuture",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.nd4j",
+                    "name": "nd4j-native-platform",
+                    "version": "0.9.1",
+                    "artifacts": [
+                        {
+                            "name": "nd4j-native-platform",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native-platform/0.9.1/952a27987f4fea4ba3a2547551fcc5e31c595c37/nd4j-native-platform-0.9.1-sources.jar"
+                        },
+                        {
+                            "name": "nd4j-native-platform",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native-platform/0.9.1/952a27987f4fea4ba3a2547551fcc5e31c595c37/nd4j-native-platform-0.9.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.yaml",
+                    "name": "snakeyaml",
+                    "version": "1.12",
+                    "artifacts": [
+                        {
+                            "name": "snakeyaml",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.12/ebe66a6b88caab31d7a19571ad23656377523545/snakeyaml-1.12.jar"
+                        },
+                        {
+                            "name": "snakeyaml",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.12/f86c67beb22f7d1edb5d6c6a3c4dab77a23234da/snakeyaml-1.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-api",
+                    "version": "1.7.26",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-api",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.26/21c84cdf9da108216b5e402611d4af479b60cb8/slf4j-api-1.7.26-sources.jar"
+                        },
+                        {
+                            "name": "slf4j-api",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.26/77100a62c2e6f04b53977b9f541044d7d722693d/slf4j-api-1.7.26.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.nd4j",
+                    "name": "jackson",
+                    "version": "0.9.1",
+                    "artifacts": [
+                        {
+                            "name": "jackson",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/jackson/0.9.1/a1c567047d317459e2de973b8c46337cc89b04f2/jackson-0.9.1-sources.jar"
+                        },
+                        {
+                            "name": "jackson",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/jackson/0.9.1/e457a1d6897967fb4a7551824549fed587a57f62/jackson-0.9.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.bytedeco.javacpp-presets",
+                    "name": "openblas",
+                    "version": "0.2.19-1.3",
+                    "artifacts": [
+                        {
+                            "name": "openblas",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/2e6e277acdbad4d037ed26ee40ac2f5db57196c9/openblas-0.2.19-1.3-linux-ppc64le.jar"
+                        },
+                        {
+                            "name": "openblas",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/5c336d63e768ff4f21449479aec5e048849e16ae/openblas-0.2.19-1.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.bytedeco.javacpp-presets",
+                    "name": "openblas",
+                    "version": "0.2.19-1.3",
+                    "artifacts": [
+                        {
+                            "name": "openblas",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/d82330716ef90c175cfe238a4b8b0509a6fa705c/openblas-0.2.19-1.3.jar"
+                        },
+                        {
+                            "name": "openblas",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/5c336d63e768ff4f21449479aec5e048849e16ae/openblas-0.2.19-1.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.bytedeco.javacpp-presets",
+                    "name": "openblas",
+                    "version": "0.2.19-1.3",
+                    "artifacts": [
+                        {
+                            "name": "openblas",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/9d1b1cceb7e113eb31b198bffcb336647191dda4/openblas-0.2.19-1.3-linux-x86_64.jar"
+                        },
+                        {
+                            "name": "openblas",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/5c336d63e768ff4f21449479aec5e048849e16ae/openblas-0.2.19-1.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.bytedeco.javacpp-presets",
+                    "name": "openblas",
+                    "version": "0.2.19-1.3",
+                    "artifacts": [
+                        {
+                            "name": "openblas",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/5700913706162e7e306289bd06cd0508d49d6c85/openblas-0.2.19-1.3-windows-x86_64.jar"
+                        },
+                        {
+                            "name": "openblas",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/5c336d63e768ff4f21449479aec5e048849e16ae/openblas-0.2.19-1.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.qos.logback",
+                    "name": "logback-classic",
+                    "version": "1.2.3",
+                    "artifacts": [
+                        {
+                            "name": "logback-classic",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/cfd5385e0c5ed1c8a5dce57d86e79cf357153a64/logback-classic-1.2.3-sources.jar"
+                        },
+                        {
+                            "name": "logback-classic",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/7c4f3c474fb2c041d8028740440937705ebb473a/logback-classic-1.2.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-refspec_2.13",
+                    "version": "3.2.18",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-refspec_2.13",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-refspec_2.13/3.2.18/a2febde7f66bfb5fadec1f54c9e8e6327c246d26/scalatest-refspec_2.13-3.2.18.jar"
+                        },
+                        {
+                            "name": "scalatest-refspec_2.13",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-refspec_2.13/3.2.18/dc07e8f2209e43ee734462dd862fdca0aa45543e/scalatest-refspec_2.13-3.2.18-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-shouldmatchers_2.13",
+                    "version": "3.2.18",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-shouldmatchers_2.13",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-shouldmatchers_2.13/3.2.18/9624e5d5bd38ff00b0601635af95f2f7cdc07d5b/scalatest-shouldmatchers_2.13-3.2.18.jar"
+                        },
+                        {
+                            "name": "scalatest-shouldmatchers_2.13",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-shouldmatchers_2.13/3.2.18/8edb8770ef076f7c7cb3ae4be8426300e0de41db/scalatest-shouldmatchers_2.13-3.2.18-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-freespec_2.13",
+                    "version": "3.2.18",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-freespec_2.13",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-freespec_2.13/3.2.18/9f91b33ae8c98c5fe3032c5c61f2b5ae8e63b52c/scalatest-freespec_2.13-3.2.18.jar"
+                        },
+                        {
+                            "name": "scalatest-freespec_2.13",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-freespec_2.13/3.2.18/f11411aff3320ce7ead6a28debb2b3709220349b/scalatest-freespec_2.13-3.2.18-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.bytedeco.javacpp-presets",
+                    "name": "openblas",
+                    "version": "0.2.19-1.3",
+                    "artifacts": [
+                        {
+                            "name": "openblas",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/f4690d42b6fb6c2e51ef7c4412128bccaf58a30b/openblas-0.2.19-1.3-linux-x86.jar"
+                        },
+                        {
+                            "name": "openblas",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/5c336d63e768ff4f21449479aec5e048849e16ae/openblas-0.2.19-1.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-math3",
+                    "version": "3.6.1",
+                    "artifacts": [
+                        {
+                            "name": "commons-math3",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-math3/3.6.1/e4ba98f1d4b3c80ec46392f25e094a6a2e58fcbf/commons-math3-3.6.1.jar"
+                        },
+                        {
+                            "name": "commons-math3",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-math3/3.6.1/8fab23986ea8886af34818daf32a718e81dc98ba/commons-math3-3.6.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-compatible",
+                    "version": "3.2.18",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-compatible",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-compatible/3.2.18/4623b826c2768b1cea22ee0c7480deb3690fc9c1/scalatest-compatible-3.2.18.jar"
+                        },
+                        {
+                            "name": "scalatest-compatible",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-compatible/3.2.18/71f9d1d41f06ec4179022e7a92a082c1c814bb25/scalatest-compatible-3.2.18-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.nd4j",
+                    "name": "nd4j-common",
+                    "version": "0.9.1",
+                    "artifacts": [
+                        {
+                            "name": "nd4j-common",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-common/0.9.1/b04b22aed42a51b2f381ba3f6dec4799564312b0/nd4j-common-0.9.1.jar"
+                        },
+                        {
+                            "name": "nd4j-common",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-common/0.9.1/58e60dc5689c2b2324dbdb7f6208acb7daa99813/nd4j-common-0.9.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.errorprone",
+                    "name": "error_prone_annotations",
+                    "version": "2.26.1",
+                    "artifacts": [
+                        {
+                            "name": "error_prone_annotations",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.26.1/b6d2491085a2ca4d152f3937f45009c23d928ef9/error_prone_annotations-2.26.1-sources.jar"
+                        },
+                        {
+                            "name": "error_prone_annotations",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.26.1/c1fde57694bdc14e8618899aaa6e857d9465d7de/error_prone_annotations-2.26.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-funspec_2.13",
+                    "version": "3.2.18",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-funspec_2.13",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-funspec_2.13/3.2.18/55c0e28ab663814e328b537490171bec8550291a/scalatest-funspec_2.13-3.2.18-sources.jar"
+                        },
+                        {
+                            "name": "scalatest-funspec_2.13",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-funspec_2.13/3.2.18/7773547b819c1db49d0d3e995258dc30af21a38a/scalatest-funspec_2.13-3.2.18.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "be.botkop",
+                    "name": "numsca_2.13",
+                    "version": "0.1.7",
+                    "artifacts": [
+                        {
+                            "name": "numsca_2.13",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/be.botkop/numsca_2.13/0.1.7/dca40b24fc1a2562bef59dc9ac27b4b17feb6d93/numsca_2.13-0.1.7.jar"
+                        },
+                        {
+                            "name": "numsca_2.13",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/be.botkop/numsca_2.13/0.1.7/f636a73bac155449059c29313f9ec4b35865f4a3/numsca_2.13-0.1.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.scala-logging",
+                    "name": "scala-logging_2.13",
+                    "version": "3.9.2",
+                    "artifacts": [
+                        {
+                            "name": "scala-logging_2.13",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/com.typesafe.scala-logging/scala-logging_2.13/3.9.2/3c9141a20ea95952f1d5254e0fa8bc4e62c9c1b8/scala-logging_2.13-3.9.2-sources.jar"
+                        },
+                        {
+                            "name": "scala-logging_2.13",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/com.typesafe.scala-logging/scala-logging_2.13/3.9.2/6986314976f55419819ca7ae9f9d077ba070fe42/scala-logging_2.13-3.9.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-featurespec_2.13",
+                    "version": "3.2.18",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-featurespec_2.13",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-featurespec_2.13/3.2.18/c9635d294097e3a0098b89862451aa59c756862d/scalatest-featurespec_2.13-3.2.18.jar"
+                        },
+                        {
+                            "name": "scalatest-featurespec_2.13",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-featurespec_2.13/3.2.18/e0f75322e6d37da1ac5640dc85f3e7f07f6d31c2/scalatest-featurespec_2.13-3.2.18-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.13.10",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.13.10/5df79e6c2f21a25172ed2ecc3c83f4703ad50061/scala-reflect-2.13.10-sources.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.13.10/f19c2a5fc93a63398a5cfc56a14f0abf1d28d27c/scala-reflect-2.13.10.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.stephenc.findbugs",
+                    "name": "findbugs-annotations",
+                    "version": "1.3.9-1",
+                    "artifacts": [
+                        {
+                            "name": "findbugs-annotations",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/com.github.stephenc.findbugs/findbugs-annotations/1.3.9-1/a6b11447635d80757d64b355bed3c00786d86801/findbugs-annotations-1.3.9-1.jar"
+                        },
+                        {
+                            "name": "findbugs-annotations",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/com.github.stephenc.findbugs/findbugs-annotations/1.3.9-1/bbcf4719c93a1e8a66f7356ba9f9ffe426a1dd16/findbugs-annotations-1.3.9-1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-matchers-core_2.13",
+                    "version": "3.2.18",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-matchers-core_2.13",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-matchers-core_2.13/3.2.18/c5ea5ba03420dca781f1a8072f993f5fd5b3ef20/scalatest-matchers-core_2.13-3.2.18-sources.jar"
+                        },
+                        {
+                            "name": "scalatest-matchers-core_2.13",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-matchers-core_2.13/3.2.18/61fc26d8a20e47eb9668e89626acdaf7f1434d59/scalatest-matchers-core_2.13-3.2.18.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.nd4j",
+                    "name": "nd4j-api",
+                    "version": "0.9.1",
+                    "artifacts": [
+                        {
+                            "name": "nd4j-api",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-api/0.9.1/781bbeed71ef40b902c4b8076c7a2fc937f85160/nd4j-api-0.9.1.jar"
+                        },
+                        {
+                            "name": "nd4j-api",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-api/0.9.1/54e4a92c130f12fd70d78511f0713ea70e517ee5/nd4j-api-0.9.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.nd4j",
+                    "name": "nd4j-native",
+                    "version": "0.9.1",
+                    "artifacts": [
+                        {
+                            "name": "nd4j-native",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/b2ee18006d23b41f0830eb35dc77fd86b91bab32/nd4j-native-0.9.1-sources.jar"
+                        },
+                        {
+                            "name": "nd4j-native",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/73604d40f4d414716375d579e7568f392d656c4f/nd4j-native-0.9.1-android-x86.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.nd4j",
+                    "name": "nd4j-native",
+                    "version": "0.9.1",
+                    "artifacts": [
+                        {
+                            "name": "nd4j-native",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/d0d4e11141bccf1de588a6edb887c811a4b5ab79/nd4j-native-0.9.1.jar"
+                        },
+                        {
+                            "name": "nd4j-native",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/b2ee18006d23b41f0830eb35dc77fd86b91bab32/nd4j-native-0.9.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-propspec_2.13",
+                    "version": "3.2.18",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-propspec_2.13",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-propspec_2.13/3.2.18/3d4e9d1e77a3120f8ebac5894399086a8c6e2ddd/scalatest-propspec_2.13-3.2.18.jar"
+                        },
+                        {
+                            "name": "scalatest-propspec_2.13",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-propspec_2.13/3.2.18/5aa835833d05f40fb452f9e6dee2a98127338093/scalatest-propspec_2.13-3.2.18-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.nd4j",
+                    "name": "nd4j-native",
+                    "version": "0.9.1",
+                    "artifacts": [
+                        {
+                            "name": "nd4j-native",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/98cf23e416181df854dde539316dae2505a8911a/nd4j-native-0.9.1-android-arm.jar"
+                        },
+                        {
+                            "name": "nd4j-native",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/b2ee18006d23b41f0830eb35dc77fd86b91bab32/nd4j-native-0.9.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.nd4j",
+                    "name": "nd4j-native",
+                    "version": "0.9.1",
+                    "artifacts": [
+                        {
+                            "name": "nd4j-native",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/c25d480129677653987292797de2aabc77ea0d7e/nd4j-native-0.9.1-macosx-x86_64.jar"
+                        },
+                        {
+                            "name": "nd4j-native",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/b2ee18006d23b41f0830eb35dc77fd86b91bab32/nd4j-native-0.9.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.qos.logback",
+                    "name": "logback-core",
+                    "version": "1.2.3",
+                    "artifacts": [
+                        {
+                            "name": "logback-core",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.3/864344400c3d4d92dfeb0a305dc87d953677c03c/logback-core-1.2.3.jar"
+                        },
+                        {
+                            "name": "logback-core",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.3/3ebabe69eba0196af9ad3a814f723fb720b9101e/logback-core-1.2.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.guava",
+                    "name": "failureaccess",
+                    "version": "1.0.2",
+                    "artifacts": [
+                        {
+                            "name": "failureaccess",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.2/6acdafcf2dfc3b548e59dd3a4b454552aeb6ff65/failureaccess-1.0.2-sources.jar"
+                        },
+                        {
+                            "name": "failureaccess",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.2/c4a06a64e650562f30b7bf9aaec1bfed43aca12b/failureaccess-1.0.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.ericaro",
+                    "name": "neoitertools",
+                    "version": "1.0.0",
+                    "artifacts": [
+                        {
+                            "name": "neoitertools",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/net.ericaro/neoitertools/1.0.0/eb896e55dbacc0ce95263c18440758118947c6ea/neoitertools-1.0.0-sources.jar"
+                        },
+                        {
+                            "name": "neoitertools",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/net.ericaro/neoitertools/1.0.0/25fa0a0aaf12bc386ecdb19a6ee747b361c73a20/neoitertools-1.0.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-diagrams_2.13",
+                    "version": "3.2.18",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-diagrams_2.13",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-diagrams_2.13/3.2.18/c47f6f310cfc09dabcbd50781f807982d025b96b/scalatest-diagrams_2.13-3.2.18-sources.jar"
+                        },
+                        {
+                            "name": "scalatest-diagrams_2.13",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-diagrams_2.13/3.2.18/28ea37b96e1ce1c0ce7a696077212f6ceb9b3154/scalatest-diagrams_2.13-3.2.18.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.nd4j",
+                    "name": "nd4j-native",
+                    "version": "0.9.1",
+                    "artifacts": [
+                        {
+                            "name": "nd4j-native",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/dad24bde8da226270eb95dd922c8159ba336ae84/nd4j-native-0.9.1-linux-x86_64.jar"
+                        },
+                        {
+                            "name": "nd4j-native",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/b2ee18006d23b41f0830eb35dc77fd86b91bab32/nd4j-native-0.9.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.j2objc",
+                    "name": "j2objc-annotations",
+                    "version": "3.0.0",
+                    "artifacts": [
+                        {
+                            "name": "j2objc-annotations",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/3.0.0/e6e870c6faf70867a723848b036607cd7d389621/j2objc-annotations-3.0.0-sources.jar"
+                        },
+                        {
+                            "name": "j2objc-annotations",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/3.0.0/7399e65dd7e9ff3404f4535b2f017093bdb134c7/j2objc-annotations-3.0.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.bytedeco.javacpp-presets",
+                    "name": "openblas",
+                    "version": "0.2.19-1.3",
+                    "artifacts": [
+                        {
+                            "name": "openblas",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/ef70f48568644a11e29c69981147cba2b3681c55/openblas-0.2.19-1.3-android-arm.jar"
+                        },
+                        {
+                            "name": "openblas",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/5c336d63e768ff4f21449479aec5e048849e16ae/openblas-0.2.19-1.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.nd4j",
+                    "name": "nd4j-native-api",
+                    "version": "0.9.1",
+                    "artifacts": [
+                        {
+                            "name": "nd4j-native-api",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native-api/0.9.1/fb440408159a48da90b614b51eaacb9c4de4b45a/nd4j-native-api-0.9.1-sources.jar"
+                        },
+                        {
+                            "name": "nd4j-native-api",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native-api/0.9.1/7fcba24a804d955bcc6958609b41fb562b7a491c/nd4j-native-api-0.9.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.code.findbugs",
+                    "name": "annotations",
+                    "version": "2.0.1",
+                    "artifacts": [
+                        {
+                            "name": "annotations",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/annotations/2.0.1/9ef6656259841cebfb9fb0697bb122ada4485498/annotations-2.0.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.nd4j",
+                    "name": "nd4j-native",
+                    "version": "0.9.1",
+                    "artifacts": [
+                        {
+                            "name": "nd4j-native",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/5878a9a35728170ca6466ffbbe0636a429f26245/nd4j-native-0.9.1-linux-ppc64le.jar"
+                        },
+                        {
+                            "name": "nd4j-native",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.nd4j/nd4j-native/0.9.1/b2ee18006d23b41f0830eb35dc77fd86b91bab32/nd4j-native-0.9.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-funsuite_2.13",
+                    "version": "3.2.18",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-funsuite_2.13",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-funsuite_2.13/3.2.18/5db4ce623f32bfd60db53fe55b2f777e7a4cb7bd/scalatest-funsuite_2.13-3.2.18.jar"
+                        },
+                        {
+                            "name": "scalatest-funsuite_2.13",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest-funsuite_2.13/3.2.18/94c641c9ed4f9c1e92d373a8a826c000a2b94a27/scalatest-funsuite_2.13-3.2.18-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.bytedeco.javacpp-presets",
+                    "name": "openblas",
+                    "version": "0.2.19-1.3",
+                    "artifacts": [
+                        {
+                            "name": "openblas",
+                            "classifier": "sources",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/5c336d63e768ff4f21449479aec5e048849e16ae/openblas-0.2.19-1.3-sources.jar"
+                        },
+                        {
+                            "name": "openblas",
+                            "path": "/workspace/.gradle/caches/modules-2/files-2.1/org.bytedeco.javacpp-presets/openblas/0.2.19-1.3/dad2dde60800dfb1108f957f514a5f8de942f5d3/openblas-0.2.19-1.3-linux-armhf.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "library"
+        ]
+    }
+}

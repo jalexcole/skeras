@@ -58,4 +58,12 @@ package io.keras.backend.common
   * )
   * ```
   */
-class KerasVariable {}
+class KerasVariable[T](var initializer: Either[T, (Array[Int], String) => T],
+                    var shape: Option[Array[Int]] = None,
+                    var dtype: Option[String] = None,
+                    var trainable: Boolean = true,
+                    var autocast: Boolean = true,
+                    var aggregation: String = "mean",
+                    var name: Option[String] = None) {
+
+}
