@@ -12,7 +12,9 @@ plugins {
     // Apply the java-library plugin for API and implementation separation.
     id 'java-library'
 }
-
+scala {
+    zincVersion = "1.5.0"
+}
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
@@ -20,15 +22,17 @@ repositories {
 
 dependencies {
     // Use Scala 2.13 in our library project
-    implementation libs.scala.library
-
+    implementation 'org.scala-lang:scala3-library_3:3.3.0' // Adjust version as needed
+    // https://mvnrepository.com/artifact/org.tensorflow/tensorflow-core-platform
+     implementation 'org.tensorflow:tensorflow-core-platform:1.0.0-rc.1'
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation libs.guava
     // https://mvnrepository.com/artifact/be.botkop/numsca
-    implementation group: 'be.botkop', name: 'numsca_2.13', version: '0.1.7'
+    // implementation group: 'be.botkop', name: 'numsca_2.13', version: '0.1.7'
     // Use Scalatest for testing our library
     testImplementation libs.junit
-    testImplementation libs.scalatest.v2.v13
+    testImplementation 'org.scalatest:scalatest_3:3.2.14' // Adjust version as needed
+
     testImplementation libs.junit.v4.v13.v2.v13
 
     // Need scala-xml at test runtime
@@ -36,6 +40,12 @@ dependencies {
 
     // This dependency is exported to consumers, that is to say found on their compile classpath.
     api libs.commons.math3
+}
+
+tasks.withType(ScalaCompile) {
+    configure(scalaCompileOptions.forkOptions) {
+        jvmArgs = ['-Xss4m', '-Xmx2048m']
+    }
 }
 
 // Apply a specific Java toolchain to ease working on different environments.

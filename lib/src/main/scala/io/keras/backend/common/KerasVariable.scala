@@ -58,4 +58,133 @@ package io.keras.backend.common
   * )
   * ```
   */
-class KerasVariable {}
+class KerasVariable(var initializer: Either[T, (Array[Int], String) => T],
+                    var shape: Option[Array[Int]] = None,
+                    var dtype: Option[String] = None,
+                    var trainable: Boolean = true,
+                    var autocast: Boolean = true,
+                    var aggregation: String = "mean",
+                    var name: Option[String] = None) {
+
+  name = name.orElse(Some(autoName(this.getClass.getSimpleName)))
+
+  if (!name.get.matches("^[^/]+$")) {
+    throw new IllegalArgumentException(s"Argument `name` must be a string and cannot contain character `/`. Received: name=${name.get}")
+  }
+
+  if (!Set("mean", "sum", "only_first_replica").contains(aggregation)) {
+    throw new IllegalArgumentException(s"Invalid value for argument `aggregation`. Expected one of {'mean', 'sum', 'only_first_replica'}. Received: aggregation=$aggregation")
+  }
+
+  var path: String = {
+    val parentPath = currentPath()
+    if (parentPath.nonEmpty) s"$parentPath/${name.get}" else name.get
+  }
+
+  dtype = Some(standardizeDtype(dtype))
+  var _shape: Option[Array[Int]] = None
+  var _initializer: Option[(Array[Int], String) => T] = None
+  var _regularizer: Option[Any] = None
+  var _constraint: Option[Any] = None
+  var _trainable: Boolean = trainable
+  var _autocast: Boolean = autocast
+  var _aggregation: String = aggregation
+  var _overwriteWithGradient: Boolean = false
+
+  initializer match {
+    case Left(initValue) => _initialize(initValue)
+    case Right(initFunc) =>
+      if (shape.isEmpty) {
+        throw new IllegalArgumentException(
+          s"When creating a Variable from an initializer, the `shape` argument should be specified. Received: initializer=$initFunc and shape=$shape"
+        )
+      }
+      _initializer = Some(initFunc)
+      _shape = Some(_validateShape(shape.get))
+      if (inStatelessScope()) {
+        registerUninitializedVariable(this)
+      } else {
+        val value = initFunc(_shape.get, dtype.get)
+        _initialize(value)
+      }
+  }
+
+  var _ndim: Int = _shape.map(_.length).getOrElse(0)
+
+  private def _initialize(value: T): Unit = {
+    // Initialize the variable with the given value
+  }
+
+  private def _validateShape(shape: Array[Int]): Array[Int] = {
+    val standardizedShape = standardizeShape(shape)
+    if (standardizedShape.contains(null)) {
+      throw new IllegalArgumentException(s"Shapes used to initialize variables must be fully-defined (no `None` dimensions). Received: shape=$shape for variable path='$path'")
+    }
+    standardizedShape
+  }
+
+  def numpy(): Array[Byte] = {
+    // Convert the variable to a NumPy array
+    Array[Byte]()
+  }
+
+  def assign(value: T): Unit = {
+    val convertedValue = _convertToTensor(value, dtype)
+    if (!shapeEqual(convertedValue.shape, _shape.get)) {
+      throw new IllegalArgumentException(
+        s"The shape of the target variable and the shape of the target value in `variable.assign(value)` must match. variable.shape=${_shape.get}, Received: value.shape=${convertedValue.shape}. Target variable: $this"
+      )
+    }
+    if (inStatelessScope()) {
+      getStatelessScope().addUpdate((this, value))
+    } else {
+      _directAssign(value)
+    }
+  }
+
+  def assignAdd(value: T): Unit = assign(add(this.value, value))
+
+  def assignSub(value: T): Unit = assign(sub(this.value, value))
+
+  def _convertToTensor(value: T, dtype: Option[String]): T = {
+    // Convert the value to a tensor
+    value
+  }
+
+  def _directAssign(value: T): Unit = {
+    // Directly assign the value to the variable
+  }
+
+  override def toString: String = s"<KerasVariable shape=${_shape.get}, dtype=$dtype, path=$path>"
+
+  def value: T = {
+    if (inStatelessScope()) {
+      val scope = getStatelessScope()
+      val currentValue = scope.getCurrentValue(this)
+      if (currentValue.isDefined) {
+        return _maybeAutocast(currentValue.get)
+      }
+    }
+    _initializer match {
+      case Some(initFunc) => _maybeAutocast(initFunc(_shape.get, dtype.get))
+      case None => throw new IllegalStateException("Variable not initialized")
+    }
+  }
+
+//  private def _maybeAutocast(value: T): T = {
+//    // Handle autocasting if needed
+//    value
+//  }
+}
+
+//object KerasVariable {
+//  def apply[T: ClassTag](
+//                          initializer: Either[T, (Array[Int], String) => T],
+//                          shape: Option[Array[Int]] = None,
+//                          dtype: Option[String] = None,
+//                          trainable: Boolean = true,
+//                          autocast: Boolean = true,
+//                          aggregation: String = "mean",
+//                          name: Option[String] = None
+//                        ): KerasVariable[T] = new KerasVariable[T](initializer, shape, dtype, trainable, autocast, aggregation, name)
+//}
