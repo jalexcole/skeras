@@ -1,7 +1,10 @@
 package io.keras.metrics
 
 trait Metric {
+  def auto_name(className: String): String = s"${className}_auto"
 
+  def updateState(): Unit;
+  def result(): Unit;
 }
 
 object ops {
@@ -13,4 +16,3 @@ object ops {
   def broadcast_to(value: Any, shape: Seq[Int]): Any = ???
 }
 
-def auto_name(className: String): String = s"${className}_auto"

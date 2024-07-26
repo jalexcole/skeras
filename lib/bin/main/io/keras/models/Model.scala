@@ -50,7 +50,7 @@ package io.keras.models
   * In that case, you should define your layers in `__init__()` and you should
   * implement the model's forward pass in `call()`.
   *
-  * ```python
+  * {{{python
   * class MyModel(keras.Model):
   * def __init__(self):
   * super().__init__()
@@ -62,13 +62,13 @@ package io.keras.models
   * return self.dense2(x)
   *
   * model = MyModel()
-  * ```
+  * }}}
   *
   * If you subclass `Model`, you can optionally have a `training` argument
   * (boolean) in `call()`, which you can use to specify a different behavior in
   * training and inference:
   *
-  * ```python
+  * {{{python
   * class MyModel(keras.Model):
   * def __init__(self):
   * super().__init__()
@@ -82,7 +82,7 @@ package io.keras.models
   * return self.dense2(x)
   *
   * model = MyModel()
-  * ```
+  * }}}
   *
   * Once the model is created, you can config the model with losses and metrics
   * with `model.compile()`, train the model with `model.fit()`, or use the model
@@ -93,11 +93,13 @@ package io.keras.models
   * In addition, `keras.Sequential` is a special case of model where the model
   * is purely a stack of single-input, single-output layers.
   *
-  * ```python
+  * {{{python
   * model = keras.Sequential([
   * keras.Input(shape=(None, None, 3)),
   * keras.layers.Conv2D(filters=32, kernel_size=3),
   * ])
-  * ```
+  * }}}
   */
-trait Model(var cls: Object) {}
+trait Model {
+
+}
