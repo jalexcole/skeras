@@ -16,12 +16,24 @@ package io.keras.backend.common;
   * data involved). The computation of the correct output shape and dtype is
   * called "static shape inference".
   */
-class KerasTensor(
-    val shape: Object,
-    val dtype: String = "float32",
-    val sparse: Boolean = false,
-    val recordHistory: Boolean = true,
-    val name: String = null
-) {
-  
+class KerasTensor(val shape: List[Int]) {
+    var dtype: String = "float32"
+    var sparse: Boolean = false
+    var recordHistory: Boolean = true
+    var name: String = null
+
+  def this (shape: List[Int], dtype: String = "float32",
+    sparse: Boolean = false,
+    recordHistory: Boolean = true,
+    name: String = null) = {
+    this(shape)
+    this.dtype = dtype
+    this.sparse = sparse
+    this.recordHistory = recordHistory
+    this.name = name
+    }
+
+    // def dtype(): String ={this.dtype}
+    // def shape(): List[Int] = {this.shape}
+
 }

@@ -30,35 +30,7 @@ object core {
   def deviceScope() = {}
 }
 
-class Variable  {
-    def initializer(value: Object) = {
 
-    }
-
-    private def initialize() = {
-
-    }
-
-    private def defferedInitialize() = {
-
-    }
-
-    private def directAssign() = {
-
-    }
-
-    private def convertToTensor() = {}
-    def numpy() = {}
-    def shape() = {}
-    private def tfTensor() = {}
-    private def sharedName() = {}
-    private def serializeToTensor() = {}
-    private def restoreFromTensors() = {}
-    private def copyTrackableToCPU() = {}
-    private def exportToSavedModelGraph() = {}
-    private def writeObjectProto() = {}
-
-}
 
 class NameScope {
     def initializer() = {}

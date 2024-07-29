@@ -58,12 +58,28 @@ package io.keras.backend.common
   * )
   * ```
   */
-class KerasVariable[T](var initializer: Either[T, (Array[Int], String) => T],
-                    var shape: Option[Array[Int]] = None,
-                    var dtype: Option[String] = None,
-                    var trainable: Boolean = true,
-                    var autocast: Boolean = true,
-                    var aggregation: String = "mean",
-                    var name: Option[String] = None) {
+class KerasVariable[T](var initializer: Either[T, (Array[Int], String) => T]
+                    ) {
+                    var shape: Option[Array[Int]] = None
+                    var dtype: Option[String] = None
+                    var trainable: Boolean = true
+                    var autocast: Boolean = true
+                    var aggregation: String = "mean"
+                    var name: Option[String] = None
+
+
+      def this (initializer:Either[T, (Array[Int], String) => T],  shape: Option[Array[Int]] = None,
+                     dtype: Option[String] = None,
+                     trainable: Boolean = true,
+                     autocast: Boolean = true,
+                     aggregation: String = "mean",
+                     name: Option[String] = None) = {
+        this(initializer)
+        this.dtype = dtype
+        this.trainable = trainable
+        this.autocast = autocast
+        this.aggregation = aggregation
+        this.name = name
+      } 
 
 }
